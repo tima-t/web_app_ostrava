@@ -1,0 +1,25 @@
+{
+  "name": "web_app_1",
+  "version": "1.0.0",
+  "description": "Semestrial project for \"develpmnet of web application\" Tu Ostrava",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "web",
+    "angular",
+    "bootstrap.",
+    "ajax",
+    "jQuery",
+    "js",
+    "css"
+  ],
+  "author": "Tito Titov",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.6.0-rc.2",
+    "angular-route": "^1.5.9",
+    "bootstrap": "^3.3.7"
+  }
+}
