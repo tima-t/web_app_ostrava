@@ -2,4 +2,13 @@
         <h1>World App</h1>
 
         <p>{{ message }}</p>
-    </div
+    </div>
+    <div ng-if="country">
+    <p>Name: {{country.name}}</p>
+    <p>Capital: {{country.capital}}</p>
+    <p>Region :{{country.region}}</p>
+    <p>Area: {{country.area}} km^2</p>
+    <p>Sub region: {{country.subregion}}</p>
+    <p>Popultaion {{country.population}} people</p>
+    <p>Timezones {{country.timezones[0]}}</p>
+    </div>

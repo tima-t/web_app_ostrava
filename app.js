@@ -34,7 +34,7 @@
                controller  : 'contactController'
            })
             .when('/info', {
-               templateUrl : 'pages/contact.html',
+               templateUrl : 'pages/country.html',
                controller  : 'infoController'
            })
            .when('/editor', {
