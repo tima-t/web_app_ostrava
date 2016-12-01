@@ -7,6 +7,9 @@
         $locationProvider.hashPrefix('');
     }]);
 
+    worldApp.config(['$qProvider', function ($qProvider) {
+        $qProvider.errorOnUnhandledRejections(false);
+    }]);
 
 
     worldApp.config(function($routeProvider) {
@@ -29,6 +32,10 @@
            .when('/contact', {
                templateUrl : 'pages/contact.html',
                controller  : 'contactController'
+           })
+            .when('/info', {
+               templateUrl : 'pages/contact.html',
+               controller  : 'infoController'
            })
            .when('/editor', {
                templateUrl : 'pages/editor.html',
