@@ -1,28 +1,32 @@
 <!-- home.html -->
-    <div class="jumbotron text-center">
-        <h1>World App</h1>
+	<div class="jumbotron text-center">
+		<h1>Welcome to World App</h1>
 
-        <p>{{ message }}</p>
-    </div>
- <h3>My Google Maps Demo</h3>
+		<h2>{{ message }}</h2>
+		<p>{{ rule1 }}</p>
+		<p>{{ rule2 }}</p>
+		<p>{{ rule3 }}</p>
+		<p>{{ rule4 }}</p>
+	</div>
+ <!--<h3>My Google Maps Demo</h3>-->
 
-         <!-- Modal content-->
-    <div id="myModal" class="modal fade" role="dialog">
-        <div class="modal-dialog">
-         <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title">More Info</h4>
-          </div>
-          <div class="modal-body">
-            <p id="showInfo">Some text in the modal.</p>
-            <p id="hidCountry"> </p>
-          </div>
-          <div class="modal-footer">
-            <button type="button"  class="btn btn-default"  ng-click="countryInfo()">Yes</button>
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          </div>
-        </div>
+		 <!-- Modal content-->
+	<div id="myModal" class="modal fade" role="dialog">
+		<div class="modal-dialog">
+		 <div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal">&times;</button>
+			<h4 class="modal-title">More Info</h4>
+		  </div>
+		  <div class="modal-body">
+			<p id="showInfo">Some text in the modal.</p>
+			<p id="hidCountry"> </p>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button"  class="btn btn-default"  ng-click="countryInfo()">Yes</button>
+			<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		  </div>
+		</div>
 
-      </div>
-    </div>
+	  </div>
+	</div>

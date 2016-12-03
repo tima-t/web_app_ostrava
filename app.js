@@ -40,5 +40,9 @@
            .when('/editor', {
                templateUrl : 'pages/editor.html',
                controller  : 'contactController'
+           })
+           .when('/countries', {
+               templateUrl : 'pages/all_countries.html',
+               controller  : 'allCountryController'
            });
    });

@@ -1,0 +1,44 @@
+<div class="jumbotron text-center">
+	<h1>All Countries</h1>
+	<p>{{ message }}</p>
+
+		<div class="row">
+		<div class="col-sm-4 col-sm-push-4">
+			<div id="custom-search-input">
+				<div class="input-group col-md-12">
+					<input ng-model="filterT" type="text" class="form-control input-lg" placeholder="Filter by country/region" />
+					<span class="input-group-btn">
+						<button class="btn btn-info btn-lg" type="button" ng-click='newFilter()'>
+							<i class="glyphicon glyphicon-search"></i>
+						</button>
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div ng-repeat="country in countries" class="cardT" ng-if="$index % 3 == 0" class="row">
+	<div class="col-sm-4">
+	<div class="card card-block">
+	  <h3 class="card-title">{{countries[$index].name}}</h3>
+	  <p class="card-text">Region : {{countries[$index].region}}</p>
+	  <a class="btn btn-primary" ng-click="getInfo(countries[$index].name)">Learn More</a>
+	</div>
+  </div>
+  <div class="col-sm-4">
+	<div class="card card-block" ng-if="countries.length > ($index + 1)">
+	   <h3 class="card-title">{{countries[$index +1].name}}</h3>
+	  <p class="card-text">Region : {{countries[$index + 1].region}}</p>
+	  <btn class="btn btn-primary" ng-click="getInfo(countries[$index + 1].name)">Learn More</btn>
+	</div>
+  </div>
+  <div class="col-sm-4">
+	<div class="card card-block" ng-if="countries.length > ($index + 2)">
+	  <h3 class="card-title">{{countries[$index+ 2].name}}</h3>
+	  <p class="card-text">Region : {{countries[$index + 2].region}}</p>
+	  <btn class="btn btn-primary" ng-click="getInfo(countries[$index + 2].name)">Learn More</btn>
+	</div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" ng-app='worldApp' >
+<html lang="en" ng-app='worldApp'  >
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
@@ -28,6 +28,7 @@
     <script src="controllers/contactController.js"></script>
     <script src="controllers/mainController.js"></script>
     <script src="controllers/infoController.js"></script>
+	<script src="controllers/allCountryController.js"></script>
 
     <!-- Services -->
     <script src="services/countriesServices.js"></script>
@@ -41,6 +42,7 @@
 
 </head>
 <body>
+	<div class='container-fluid backT' background="assets/images/back3.png">
             <!-- HEADER AND NAVBAR -->
         <header>
             <nav class="navbar navbar-default">
@@ -51,7 +53,7 @@
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#/">World Map</a></li>
-                    <li><a href="#about">Countries</a></li>
+                    <li><a href="#countries">Countries</a></li>
                     <li><a href="#info">Country Info</a></li>
                      <li><a href="#contact">Contacts</a></li>
                     <!--<li><a href="#editor">Project Info</a></li>-->
@@ -62,7 +64,7 @@
         </header>
 
         <!-- MAIN CONTENT AND INJECTED VIEWS -->
-        <div id="main">
+        <div id="main" >
             {{message}}
             <!-- angular templating -->
             <!-- this is where content will be injected -->
@@ -71,7 +73,7 @@
         </div>
         <div id="map"></div>
         <!-- Modal -->
-
+	</div>
 
 
     <script src="assets/g_map.js"></script>
