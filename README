@@ -1,1 +1,7 @@
-This is university project Tu Ostrava
+This is university project for  Tu Ostrava  
+
+This is a simple web-app  written in html,css,js.  
+Used libraries bootstrap, jQuery, font-awesome ,Angular.js, googleMap api ,Rest countries api.  
+1 Clone the project in your localhost directory.  
+2 run npm install  
+3 open the project localhost/web_app_ostrava  
